@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(value="/categorias")
-public class CategoriaResources {
+public class CategoriaResources {// reposavel por ser o controlador dos recursos do sistema
 
     @Autowired // instancia automaticamente a classe
     private CategoriaService service;
@@ -21,6 +21,5 @@ public class CategoriaResources {
     public ResponseEntity<?> find(@PathVariable Integer id) {
         Categoria obj = service.buscar(id);
         return ResponseEntity.ok().body(obj);
-
     }
 }

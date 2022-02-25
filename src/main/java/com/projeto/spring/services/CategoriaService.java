@@ -18,4 +18,9 @@ public class CategoriaService {
         return obj.orElse(null);
     }
 
+    public void Inserir(){
+
+    }
+
+
 }
